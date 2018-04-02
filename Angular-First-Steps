@@ -1,3 +1,17 @@
+The built page you see will be the application shell which is controlled by an Angular component named AppComponent.
+
+Components are the fundamental building blocks of Angular applications. They display data on the screen, listen for user input, and take action based on that input.
+change the application title
+
+You can find them in the YOURprojectName/src/app folder.
+
+You'll find the implementation of the shell AppComponent distributed over three files:
+
+    app.component.ts— the component class code, written in TypeScript.
+    app.component.html— the component template, written in HTML.
+    app.component.css— the component's private CSS styles.
+
+
 Links to the official Angular Cli documentation repo:
 https://github.com/angular/angular-cli/wiki
 Includes:
