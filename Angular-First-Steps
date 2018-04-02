@@ -1,7 +1,7 @@
 The built page you see will be the application shell which is controlled by an Angular component named AppComponent.
 
 Components are the fundamental building blocks of Angular applications. They display data on the screen, listen for user input, and take action based on that input.
-change the application title
+change the application title.
 
 You can find them in the YOURprojectName/src/app folder.
 
@@ -13,15 +13,79 @@ You'll find the implementation of the shell AppComponent distributed over three 
 
 
 Links to the official Angular Cli documentation repo:
-https://github.com/angular/angular-cli/wiki
+LINK: https://github.com/angular/angular-cli/wiki
 Includes:
 - How to install Angular Cli
 - How to start a new project
 - A few Angular Cli commands (starting with "ng")
 
 Website to the official Angular Tutorial:
-https://angular.io/tutorial
+LINK: https://angular.io/tutorial
 Includes:
 - Installing the Angular Cli
 - Building the first app called "Angular Tour Of Heroes"
 - Basic knowledge about using Angular
+
+These are chapters from the official Angular tutorial and descriptions on what you learn in each part.
+
+1. THE APPLICATION SHELL: https://angular.io/tutorial/toh-pt0
+
+    Create the initial application structure using the Angular CLI.
+    Learn that Angular components display data.
+    Use the double curly braces of interpolation to display the app title.
+
+2. THE HERO EDITOR: https://angular.io/tutorial/toh-pt1
+
+    Use the CLI to create a second HeroesComponent.
+    Display the HeroesComponent by adding it to the AppComponent shell.
+    Apply the UppercasePipe to format the name.
+    Use two-way data binding with the ngModel directive.
+    Learn about the AppModule.
+    Import the FormsModule in the AppModule so that Angular would recognize and apply the ngModel directive.
+    Learn the importance of declaring components in the AppModule and appreciate that the CLI declares it for you.
+
+3. DISPLAYING A LIST: https://angular.io/tutorial/toh-pt2
+
+    The Tour of Heroes app displays a list of heroes in a Master/Detail view.
+    The user can select a hero and see that hero's details.
+    Use *ngFor to display a list.
+    Use *ngIf to conditionally include or exclude a block of HTML.
+    You can toggle a CSS style class with a class binding.
+
+4. MASTER/DETAIL COMPONENTS: https://angular.io/tutorial/toh-pt3
+
+    Create a separate, reusable HeroDetailComponent.
+    Use a property binding to give the parent HeroesComponent control over the child HeroDetailComponent.
+    Use the @Input decorator to make the hero property available for binding by the external HeroesComponent.
+
+5. SERVICES: https://angular.io/tutorial/toh-pt4
+
+    Refactor data access to the HeroService class.
+    Provide the HeroService in the root AppModule so that it can be injected anywhere.
+    Use Angular Dependency Injection to inject it into a component.
+    Give the HeroService get data method an asynchronous signature.
+    Discover Observable and the RxJS Observable library.
+    Use RxJS of() to return an Observable of mock heroes (Observable<Hero[]>).
+    The component's ngOnInit lifecycle hook calls the HeroService method, not the constructor.
+    Create a MessageService for loosely-coupled communication between classes.
+    The HeroService injected into a component is created with another injected service, MessageService.
+
+6. ROUTING: https://angular.io/tutorial/toh-pt5
+
+    Add the Angular router to navigate among different components.
+    Turn the AppComponent into a navigation shell with <a> links and a <router-outlet>.
+    Configure the router in an AppRoutingModule
+    Define simple routes, a redirect route, and a parameterized route.
+    Use the routerLink directive in anchor elements.
+    Refactor a tightly-coupled master/detail view into a routed detail view.
+    Use router link parameters to navigate to the detail view of a user-selected hero.
+    Share the HeroService among multiple components.
+
+7. HTTP: https://angular.io/tutorial/toh-pt6
+
+    Add the necessary dependencies to use HTTP in the app.
+    Refactor HeroService to load heroes from a web API.
+    Extend HeroService to support post(), put(), and delete() methods.
+    Update the components to allow adding, editing, and deleting of heroes.
+    Configure an in-memory web API.
+    Learn how to use Observables.
